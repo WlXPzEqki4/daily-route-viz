@@ -309,7 +309,9 @@
         try {
             console.log('Attempting to load CSV file...');
             // const response = await fetch('new_df.csv');
-            const response = await fetch('/new_df.csv');
+            // const response = await fetch('/new_df.csv');
+            const response = await fetch('./public/new_df.csv');
+
 
             if (!response.ok) {
                 throw new Error(`Failed to load CSV file: ${response.status} ${response.statusText}`);
